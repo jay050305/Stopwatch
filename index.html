@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stopWatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <title>Stopwatch</title>
+</head>
+<body class="center">
+    <div class="main-div center">
+        <div class="counters center">
+            <div class="counter minute" id="minute">00</div>:
+            <div class="counter second" id="second">00</div>:
+            <div class="counter microSec" id="microSec">00</div>
+        </div>
+        <div class="buttons center">
+            <button id="stop" onclick="resetButton()"><i class="fa fa-stop"></i></button>
+            <button id="play" onclick="play()"><i class="fa fa-play playPause"></i></button>
+            <button id="pause" onclick="pause()"><i class="fa fa-pause playPause"></i></button>
+            <button id="flag"><i class="fa fa-flag"></i></button>
+        </div>
+        <div class="flags-div center">
+            <div class="flags" id="flags">
+                <div class="flag center">
+                    <div class="flag-number">1.</div>
+                    <div class="time">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="stopWatch.js"></script>
+
+    <!-- <script>
+        var count = document.getElementById('count');
+        // function countFun()
+        // {
+        //     var a = count.innerHTML.slice(-1);
+        //     var b = parseInt(a) + 1;
+        //     count.innerText += b; 
+        // }
+        setInterval(function()
+        {
+            var a = count.innerText;
+            var b = parseInt(a) + 1;
+            count.innerHTML = b; 
+        },1000);
+    </script> -->
+</body>
+</html>
